@@ -1,0 +1,145 @@
+/* =============== Reset gerais ============= */
+:root {
+    --green: #106E32;
+    --grey: #E8E9EE;
+    --dark-grey: #454545;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font: 700 96px 'Oswald', sans-serif;
+    line-height: 100px;
+    margin: 0 0 40px 0;
+}
+
+h2 {
+    font: 700 38px 'Oswald', sans-serif;
+    line-height: 45px;
+    margin: 15px 0 25px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* ============== HEADER =============== */
+
+header .line {
+    background-color: var(--green);
+    height: 10px;
+}
+
+.header-area {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-search form {
+    display: flex;
+}
+
+.header-search input {
+    width: 220px;
+    font: 400 16px 'Open Sans';
+    border: 1px solid #b3b3b3;
+    outline: none;
+    padding: 8px 30px 8px 15px;
+}
+
+.header-search button {
+    background-color: transparent;
+    border: none;
+    margin-left: -40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-search button img {
+    width: 16px;
+    height: 16px;
+}
+
+.header-menu {
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.header-menu img {
+    width: 26px;
+    height: 26px;
+}
+
+/* ===================== SECTION BANNER ================= */
+
+.banner {
+    background-image: url(../_assets/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.banner-images {
+    margin-top: 60px;
+}
+
+.banner-images img {
+    width: 148px;
+    height: 148px;
+
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.banner-images img:hover {
+    border: 6px solid var(--green);
+}
+
+.area1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1-content{
+    padding: 60px 250px;
+}
+
+.area1-content .quote{
+    margin-bottom: 25px;
+}
+
+.area1-img1{
+    height: 350px;
+    background-image: url(../_assets/images/f2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.area1-img2{
+    /* grid-column: 2 / 3 significa que a imagem irá ocupar a coluna 2 e 3 do grid 
+       e grid-row: 1 / 3 significa que o grid irá ocupar linha da 1 até a 3*/
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-image: url(../_assets/images/f1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
